@@ -25,8 +25,6 @@ namespace Assets.Scripts.UI
         {
             _windows = GetComponentsInChildren<WindowBase>(true);
 
-            SceneManager.LoadScene(1);
-
             foreach (var window in _windows)
             {
                 window.Close();
