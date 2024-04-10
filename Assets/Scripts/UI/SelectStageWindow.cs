@@ -1,18 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class SelectStageWindow : MonoBehaviour
+namespace Assets.Scripts.UI
 {
-    // Start is called before the first frame update
-    void Start()
+    public class SelectStageWindow : WindowBase
     {
-        
-    }
+        [SerializeField] private Button _backButton;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public override WindowType Type => WindowType.SelectStage;
+        public override bool IsPopup => false;
+
+        private void Start()
+        {
+            _backButton.onClick.AddListener(OnBackButtonClick);
+        }
+
+        private void OnBackButtonClick()
+        {
+            UISystem.Instance.OpenWindow(WindowType.Start, false);
+        }
     }
 }

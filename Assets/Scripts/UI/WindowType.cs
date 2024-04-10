@@ -1,6 +1,6 @@
 ﻿namespace Assets.Scripts.UI
 {
-    internal enum WindowType
+    public enum WindowType
     {
         Logo = 0,
         Start = 1,

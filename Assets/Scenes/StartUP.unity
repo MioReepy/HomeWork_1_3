@@ -596,7 +596,7 @@ RectTransform:
   - {fileID: 566791885}
   - {fileID: 332757478}
   - {fileID: 985547038}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1789422931}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -697,10 +697,11 @@ Transform:
   m_GameObject: {fileID: 1789422930}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49096, y: -0.15855531, z: 0.00030149007}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1071090607}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1789422932
@@ -715,12 +716,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f754a5a857d520f48aea3899e336e98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiSceneName: 0
+  _uiSceneName: Assets/Scenes/UIScene.unity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 1071090607}
   - {fileID: 1321173532}
   - {fileID: 1789422931}

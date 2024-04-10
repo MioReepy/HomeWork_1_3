@@ -1,18 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class SettingPopUp : MonoBehaviour
+namespace Assets.Scripts.UI
 {
-    // Start is called before the first frame update
-    void Start()
+    public class SettingPopUp : WindowBase
     {
-        
-    }
+        [SerializeField] private Button _backButton;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public override WindowType Type => WindowType.Setting;
+        public override bool IsPopup => true;
+
+        private void Start()
+        {
+            _backButton.onClick.AddListener(OnBackButtonClick);
+        }
+
+        private void OnBackButtonClick()
+        {
+            UISystem.Instance.Close(Type);
+        }
     }
 }

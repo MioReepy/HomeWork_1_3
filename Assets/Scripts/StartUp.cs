@@ -7,6 +7,9 @@ public class StartUp : MonoBehaviour
 
     private void Start()
     {
-        SceneManager.LoadScene(_uiSceneName);
+        if (Input.anyKey)
+        {
+            SceneManager.LoadScene(_uiSceneName);
+        }
     }
 }
